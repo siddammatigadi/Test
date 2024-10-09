@@ -4,3 +4,43 @@ To Platform API for API Manager : https://anypoint.mulesoft.com/exchange/portals
 
 
 https://knowledgehub.mulesoft.com/s/article/CI-CD-Pipeline-for-CH2-0-and-RTF-with-Github-Actions
+
+
+The City of Innovatia: Domain-Driven Design with Bounded Context and Canonical Data Model
+Setting the Scene:
+Imagine a thriving city called Innovatia, known for its innovation and progress. Innovatia is made up of various specialized districts, each focused on a particular sector:
+
+Financia (Finance District),
+Medica (Healthcare District),
+Commercia (Retail District),
+Mobilia (Transportation District).
+Each district operates independently with its own set of rules, language, and systems.
+
+Domain-Driven Design (DDD) in Innovatia:
+Each district in Innovatia is a separate domain:
+
+Financia deals with banking, investments, and payments.
+Medica handles patient care, prescriptions, and diagnoses.
+Commercia manages retail sales, customers, and inventory.
+Mobilia oversees public transport, logistics, and vehicle management.
+Within their Bounded Context, each district uses specific terminology. For instance:
+
+Financia uses "account" to refer to a bank account.
+Medica uses "patient" to refer to individuals, while in Commercia, the term "customer" is more appropriate.
+By keeping each district’s systems isolated, Innovatia ensures that each domain can evolve independently and solve its own unique problems.
+
+The Role of the Canonical Data Model (CDM):
+While each district functions well on its own, they need to communicate and collaborate for city-wide initiatives. For example:
+
+Financia must interact with Commercia for customer payments.
+Medica may need to collaborate with Mobilia for patient transportation.
+Here’s where the Canonical Data Model (CDM) comes in. Innovatia’s City Council introduces the CDM as a universal translation mechanism to ensure consistent communication between districts. While each district keeps its local terms, they translate into the CDM for cross-district communication:
+
+In the CDM, "customer" (from Commercia) and "patient" (from Medica) both map to "person."
+"Fare" (from Mobilia) becomes "payment" in the CDM when interacting with Financia.
+The CDM doesn’t force districts to change their internal systems but enables seamless interactions when they need to communicate across Innovatia.
+
+Summary of the Innovatia Analogy:
+DDD: Each district in Innovatia is a domain with its own rules and language, operating independently within its Bounded Context.
+CDM: The Canonical Data Model acts as a bridge for communication across domains, providing a unified language for city-wide collaboration.
+This "City of Innovatia" analogy works well to explain DDD, Bounded Context, and CDM in a relatable and understandable way!
